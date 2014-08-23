@@ -1,0 +1,25 @@
+C:\Users\aman\Documents\Visual Studio 2010\Projects\CwiAPI\CwiAPI\bin\CwiAPI.dll
+C:\Users\aman\Documents\Visual Studio 2010\Projects\CwiAPI\CwiAPI\bin\CwiAPI.pdb
+C:\Users\aman\Documents\Visual Studio 2010\Projects\CwiAPI\CwiAPI\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\aman\Documents\Visual Studio 2010\Projects\CwiAPI\CwiAPI\obj\Debug\CwiAPI.dll
+C:\Users\aman\Documents\Visual Studio 2010\Projects\CwiAPI\CwiAPI\obj\Debug\CwiAPI.pdb
+D:\soft\CwiAPI\CwiAPI\bin\CwiAPI.dll
+D:\soft\CwiAPI\CwiAPI\bin\CwiAPI.pdb
+D:\soft\CwiAPI\CwiAPI\obj\Debug\ResolveAssemblyReference.cache
+D:\soft\CwiAPI\CwiAPI\obj\Debug\CwiAPI.dll
+D:\soft\CwiAPI\CwiAPI\obj\Debug\CwiAPI.pdb
+D:\nextpro\CwiAPI\CwiAPI\bin\CwiAPI.dll
+D:\nextpro\CwiAPI\CwiAPI\bin\CwiAPI.pdb
+D:\nextpro\CwiAPI\CwiAPI\obj\Debug\ResolveAssemblyReference.cache
+D:\nextpro\CwiAPI\CwiAPI\obj\Debug\CwiAPI.dll
+D:\nextpro\CwiAPI\CwiAPI\obj\Debug\CwiAPI.pdb
+D:\PROJECTS\WEB PROJECTS\CWI 3.5 FW\CwiAPI\CwiAPI\bin\CwiAPI.dll
+D:\PROJECTS\WEB PROJECTS\CWI 3.5 FW\CwiAPI\CwiAPI\bin\CwiAPI.pdb
+D:\PROJECTS\WEB PROJECTS\CWI 3.5 FW\CwiAPI\CwiAPI\obj\Debug\ResolveAssemblyReference.cache
+D:\PROJECTS\WEB PROJECTS\CWI 3.5 FW\CwiAPI\CwiAPI\obj\Debug\CwiAPI.dll
+D:\PROJECTS\WEB PROJECTS\CWI 3.5 FW\CwiAPI\CwiAPI\obj\Debug\CwiAPI.pdb
+D:\DEVELOPMENT\WebApplications\CwiAPI\CwiAPI\bin\CwiAPI.dll
+D:\DEVELOPMENT\WebApplications\CwiAPI\CwiAPI\bin\CwiAPI.pdb
+D:\DEVELOPMENT\WebApplications\CwiAPI\CwiAPI\obj\Debug\ResolveAssemblyReference.cache
+D:\DEVELOPMENT\WebApplications\CwiAPI\CwiAPI\obj\Debug\CwiAPI.dll
+D:\DEVELOPMENT\WebApplications\CwiAPI\CwiAPI\obj\Debug\CwiAPI.pdb

@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="IOTAModelStoreContainer" CdmEntityContainer="IOTAEntities">
+    <EntitySetMapping Name="AdditionalAttributeValues">
+      <EntityTypeMapping TypeName="IOTAModel.AdditionalAttributeValue">
+        <MappingFragment StoreEntitySet="AdditionalAttributeValues">
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="AdditionalAttributeID" ColumnName="AdditionalAttributeID" />
+          <ScalarProperty Name="AdditionalAttributeValuePrp" ColumnName="AdditionalAttributeValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Brands">
+      <EntityTypeMapping TypeName="IOTAModel.Brand">
+        <MappingFragment StoreEntitySet="Brands">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CommentCultureDetails">
+      <EntityTypeMapping TypeName="IOTAModel.CommentCultureDetail">
+        <MappingFragment StoreEntitySet="CommentCultureDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CommentText" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="IOTAModel.Comment">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="IOTAModel.Contact">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Forename" ColumnName="Forename" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="IOTAModel.Country">
+        <MappingFragment StoreEntitySet="Countries">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Logo" ColumnName="Logo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cultures">
+      <EntityTypeMapping TypeName="IOTAModel.Culture">
+        <MappingFragment StoreEntitySet="Cultures">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LanguageCode" ColumnName="LanguageCode" />
+          <ScalarProperty Name="Locale" ColumnName="Locale" />
+          <ScalarProperty Name="IsSupported" ColumnName="IsSupported" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="IOTAModel.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="CompanyNumber" ColumnName="CompanyNumber" />
+          <ScalarProperty Name="VATNumber" ColumnName="VATNumber" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomersToAddresses">
+      <EntityTypeMapping TypeName="IOTAModel.CustomersToAddress">
+        <MappingFragment StoreEntitySet="CustomersToAddresses">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWIRanges">
+      <EntityTypeMapping TypeName="IOTAModel.CWIRanx">
+        <MappingFragment StoreEntitySet="CWIRanges">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RangeStart" ColumnName="RangeStart" />
+          <ScalarProperty Name="RangeEnd" ColumnName="RangeEnd" />
+          <ScalarProperty Name="RegularExpression" ColumnName="RegularExpression" />
+          <ScalarProperty Name="IsLatest" ColumnName="IsLatest" />
+          <ScalarProperty Name="RangeType" ColumnName="RangeType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWITexts">
+      <EntityTypeMapping TypeName="IOTAModel.CWIText">
+        <MappingFragment StoreEntitySet="CWIText">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWITextCultureDetails">
+      <EntityTypeMapping TypeName="IOTAModel.CWITextCultureDetail">
+        <MappingFragment StoreEntitySet="CWITextCultureDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CwiText" ColumnName="CwiText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Devices">
+      <EntityTypeMapping TypeName="IOTAModel.Device">
+        <MappingFragment StoreEntitySet="Devices">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Software" ColumnName="Software" />
+          <ScalarProperty Name="Hardware" ColumnName="Hardware" />
+          <ScalarProperty Name="Provider" ColumnName="Provider" />
+          <ScalarProperty Name="StatusID" ColumnName="StatusID" />
+          <ScalarProperty Name="AcquiredOn" ColumnName="AcquiredOn" />
+          <ScalarProperty Name="RetiredOn" ColumnName="RetiredOn" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="LastChecked" ColumnName="LastChecked" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="DeviceTypeID" ColumnName="DeviceTypeID" />
+          <ScalarProperty Name="NextGenID" ColumnName="NextGenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeatureCultureDetails">
+      <EntityTypeMapping TypeName="IOTAModel.FeatureCultureDetail">
+        <MappingFragment StoreEntitySet="FeatureCultureDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Features">
+      <EntityTypeMapping TypeName="IOTAModel.Feature">
+        <MappingFragment StoreEntitySet="Features">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="OrderNumber" ColumnName="OrderNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeatureTypes">
+      <EntityTypeMapping TypeName="IOTAModel.FeatureType">
+        <MappingFragment StoreEntitySet="FeatureTypes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FeatureType1" ColumnName="FeatureType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickGuides">
+      <EntityTypeMapping TypeName="IOTAModel.QuickGuide">
+        <MappingFragment StoreEntitySet="QuickGuides">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Discoverable" ColumnName="Discoverable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickGuideSections">
+      <EntityTypeMapping TypeName="IOTAModel.QuickGuideSection">
+        <MappingFragment StoreEntitySet="QuickGuideSections">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickGuideSteps">
+      <EntityTypeMapping TypeName="IOTAModel.QuickGuideStep">
+        <MappingFragment StoreEntitySet="QuickGuideSteps">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Step" ColumnName="Step" />
+          <ScalarProperty Name="Grouping" ColumnName="Grouping" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickGuideTexts">
+      <EntityTypeMapping TypeName="IOTAModel.QuickGuideText">
+        <MappingFragment StoreEntitySet="QuickGuideText">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QuickGuideTextCultureDetails">
+      <EntityTypeMapping TypeName="IOTAModel.QuickGuideTextCultureDetail">
+        <MappingFragment StoreEntitySet="QuickGuideTextCultureDetails">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="QuickGuideText" ColumnName="QuickGuideText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regions">
+      <EntityTypeMapping TypeName="IOTAModel.Region">
+        <MappingFragment StoreEntitySet="Regions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sections">
+      <EntityTypeMapping TypeName="IOTAModel.Section">
+        <MappingFragment StoreEntitySet="Sections">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SectionNumber" ColumnName="SectionNumber" />
+          <ScalarProperty Name="SectionName" ColumnName="Section" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestAnswers">
+      <EntityTypeMapping TypeName="IOTAModel.TestAnswer">
+        <MappingFragment StoreEntitySet="TestAnswers">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="TotalYes" ColumnName="TotalYes" />
+          <ScalarProperty Name="Passed" ColumnName="Passed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestInstanceConclusions">
+      <EntityTypeMapping TypeName="IOTAModel.TestInstanceConclusion">
+        <MappingFragment StoreEntitySet="TestInstanceConclusions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Conclusion" ColumnName="Conclusion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestQuestions">
+      <EntityTypeMapping TypeName="IOTAModel.TestQuestion">
+        <MappingFragment StoreEntitySet="TestQuestions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TestID" ColumnName="TestID" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="ExpectedAnswer" ColumnName="ExpectedAnswer" />
+          <ScalarProperty Name="NoOfRepeats" ColumnName="NoOfRepeats" />
+          <ScalarProperty Name="PassRate" ColumnName="PassRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopFeatureCultureDetails">
+      <EntityTypeMapping TypeName="IOTAModel.TopFeatureCultureDetail">
+        <MappingFragment StoreEntitySet="TopFeatureCultureDetails">
+          <ScalarProperty Name="TopFeatureID" ColumnName="TopFeatureID" />
+          <ScalarProperty Name="CultureID" ColumnName="CultureID" />
+          <ScalarProperty Name="TopFeature" ColumnName="TopFeature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopFeatureResults">
+      <EntityTypeMapping TypeName="IOTAModel.TopFeatureResult">
+        <MappingFragment StoreEntitySet="TopFeatureResults">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Result" ColumnName="Result" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopFeatures">
+      <EntityTypeMapping TypeName="IOTAModel.TopFeature">
+        <MappingFragment StoreEntitySet="TopFeatures">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IOTAModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CreateComments" ColumnName="CreateComments" />
+          <ScalarProperty Name="AllCustomers" ColumnName="AllCustomers" />
+          <ScalarProperty Name="AllRegions" ColumnName="AllRegions" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicles">
+      <EntityTypeMapping TypeName="IOTAModel.Vehicle">
+        <MappingFragment StoreEntitySet="Vehicles">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_DevicesToAdditionalAttributes_Devices" TypeName="IOTAModel.FK_DevicesToAdditionalAttributes_Devices" StoreEntitySet="AdditionalAttributeValues">
+      <EndProperty Name="Devices">
+        <ScalarProperty Name="ID" ColumnName="DeviceID" />
+      </EndProperty>
+      <EndProperty Name="AdditionalAttributeValues">
+        <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+        <ScalarProperty Name="AdditionalAttributeID" ColumnName="AdditionalAttributeID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Devices_Brands" TypeName="IOTAModel.FK_Devices_Brands" StoreEntitySet="Devices">
+      <EndProperty Name="Brands">
+        <ScalarProperty Name="ID" ColumnName="BrandID" />
+      </EndProperty>
+      <EndProperty Name="Devices">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Vehicle_Brands" TypeName="IOTAModel.FK_Vehicle_Brands" StoreEntitySet="Vehicles">
+      <EndProperty Name="Brands">
+        <ScalarProperty Name="ID" ColumnName="BrandID" />
+      </EndProperty>
+      <EndProperty Name="Vehicles">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CommentCultureDetails_Comments" TypeName="IOTAModel.FK_CommentCultureDetails_Comments" StoreEntitySet="CommentCultureDetails">
+      <EndProperty Name="Comments">
+        <ScalarProperty Name="ID" ColumnName="CommentID" />
+      </EndProperty>
+      <EndProperty Name="CommentCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CommentCultureDetails_Cultures" TypeName="IOTAModel.FK_CommentCultureDetails_Cultures" StoreEntitySet="CommentCultureDetails">
+      <EndProperty Name="Cultures">
+        <ScalarProperty Name="ID" ColumnName="CultureID" />
+      </EndProperty>
+      <EndProperty Name="CommentCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Comments_Sections" TypeName="IOTAModel.FK_Comments_Sections" StoreEntitySet="Comments">
+      <EndProperty Name="Sections">
+        <ScalarProperty Name="ID" ColumnName="SectionID" />
+      </EndProperty>
+      <EndProperty Name="Comments">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Users_Contacts" TypeName="IOTAModel.FK_Users_Contacts" StoreEntitySet="Users">
+      <EndProperty Name="Contacts">
+        <ScalarProperty Name="ID" ColumnName="ContactID" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="ContactID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Devices_Countries" TypeName="IOTAModel.FK_Devices_Countries" StoreEntitySet="Devices">
+      <EndProperty Name="Countries">
+        <ScalarProperty Name="ID" ColumnName="CountryID" />
+      </EndProperty>
+      <EndProperty Name="Devices">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CWITextCultureDetails_Cultures" TypeName="IOTAModel.FK_CWITextCultureDetails_Cultures" StoreEntitySet="CWITextCultureDetails">
+      <EndProperty Name="Cultures">
+        <ScalarProperty Name="ID" ColumnName="CultureID" />
+      </EndProperty>
+      <EndProperty Name="CWITextCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_FeatureCultureDetails_Cultures" TypeName="IOTAModel.FK_FeatureCultureDetails_Cultures" StoreEntitySet="FeatureCultureDetails">
+      <EndProperty Name="Cultures">
+        <ScalarProperty Name="ID" ColumnName="CultureID" />
+      </EndProperty>
+      <EndProperty Name="FeatureCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_QuickGuideTextCultureDetails_Cultures" TypeName="IOTAModel.FK_QuickGuideTextCultureDetails_Cultures" StoreEntitySet="QuickGuideTextCultureDetails">
+      <EndProperty Name="Cultures">
+        <ScalarProperty Name="ID" ColumnName="CultureID" />
+      </EndProperty>
+      <EndProperty Name="QuickGuideTextCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TopFeatureCultureDetails_Cultures" TypeName="IOTAModel.FK_TopFeatureCultureDetails_Cultures" StoreEntitySet="TopFeatureCultureDetails">
+      <EndProperty Name="Cultures">
+        <ScalarProperty Name="ID" ColumnName="CultureID" />
+      </EndProperty>
+      <EndProperty Name="TopFeatureCultureDetails">
+        <ScalarProperty Name="TopFeatureID" ColumnName="TopFeatureID" />
+        <ScalarProperty Name="CultureID" ColumnName="CultureID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CustomersToAddresses_Customers" TypeName="IOTAModel.FK_CustomersToAddresses_Customers" StoreEntitySet="CustomersToAddresses">
+      <EndProperty Name="Customers">
+        <ScalarProperty Name="ID" ColumnName="CustomerID" />
+      </EndProperty>
+      <EndProperty Name="CustomersToAddresses">
+        <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+        <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_VINs_Devices" TypeName="IOTAModel.FK_VINs_Devices" StoreEntitySet="CWIRanges">
+      <EndProperty Name="Devices">
+        <ScalarProperty Name="ID" ColumnName="DeviceID" />
+      </EndProperty>
+      <EndProperty Name="CWIRanges">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="DeviceID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_VINs_Vehicle" TypeName="IOTAModel.FK_VINs_Vehicle" StoreEntitySet="CWIRanges">
+      <EndProperty Name="Vehicles">
+        <ScalarProperty Name="ID" ColumnName="VehicleID" />
+      </EndProperty>
+      <EndProperty Name="CWIRanges">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="VehicleID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CWITextCultureDetails_CWIText" TypeName="IOTAModel.FK_CWITextCultureDetails_CWIText" StoreEntitySet="CWITextCultureDetails">
+      <EndProperty Name="CWIText">
+        <ScalarProperty Name="ID" ColumnName="CwiTextID" />
+      </EndProperty>
+      <EndProperty Name="CWITextCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_FeatureCultureDetails_Features" TypeName="IOTAModel.FK_FeatureCultureDetails_Features" StoreEntitySet="FeatureCultureDetails">
+      <EndProperty Name="Features">
+        <ScalarProperty Name="ID" ColumnName="FeatureID" />
+      </EndProperty>
+      <EndProperty Name="FeatureCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Features_FeatureTypes" TypeName="IOTAModel.FK_Features_FeatureTypes" StoreEntitySet="Features">
+      <EndProperty Name="FeatureTypes">
+        <ScalarProperty Name="ID" ColumnName="FeatureTypeID" />
+      </EndProperty>
+      <EndProperty Name="Features">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="FeatureTypeID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_Features_Sections" TypeName="IOTAModel.FK_Features_Sections" StoreEntitySet="Features">
+      <EndProperty Name="Sections">
+        <ScalarProperty Name="ID" ColumnName="SectionID" />
+      </EndProperty>
+      <EndProperty Name="Features">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="SectionID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestQuestions_Features" TypeName="IOTAModel.FK_TestQuestions_Features" StoreEntitySet="TestQuestions">
+      <EndProperty Name="Features">
+        <ScalarProperty Name="ID" ColumnName="FeatureID" />
+      </EndProperty>
+      <EndProperty Name="TestQuestions">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="FeatureID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_QuickGuideSteps_QuickGuides" TypeName="IOTAModel.FK_QuickGuideSteps_QuickGuides" StoreEntitySet="QuickGuideSteps">
+      <EndProperty Name="QuickGuides">
+        <ScalarProperty Name="ID" ColumnName="QuickGuideID" />
+      </EndProperty>
+      <EndProperty Name="QuickGuideSteps">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="QuickGuideID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_QuickGuideSteps_QuickGuideSections" TypeName="IOTAModel.FK_QuickGuideSteps_QuickGuideSections" StoreEntitySet="QuickGuideSteps">
+      <EndProperty Name="QuickGuideSections">
+        <ScalarProperty Name="ID" ColumnName="QuickGuideSectionID" />
+      </EndProperty>
+      <EndProperty Name="QuickGuideSteps">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_QuickGuideSteps_QuickGuideText" TypeName="IOTAModel.FK_QuickGuideSteps_QuickGuideText" StoreEntitySet="QuickGuideSteps">
+      <EndProperty Name="QuickGuideText">
+        <ScalarProperty Name="ID" ColumnName="QuickGuideTextID" />
+      </EndProperty>
+      <EndProperty Name="QuickGuideSteps">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_QuickGuideTextCultureDetails_QuickGuideText" TypeName="IOTAModel.FK_QuickGuideTextCultureDetails_QuickGuideText" StoreEntitySet="QuickGuideTextCultureDetails">
+      <EndProperty Name="QuickGuideText">
+        <ScalarProperty Name="ID" ColumnName="QuickGuideTextID" />
+      </EndProperty>
+      <EndProperty Name="QuickGuideTextCultureDetails">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestAnswers_TestQuestions" TypeName="IOTAModel.FK_TestAnswers_TestQuestions" StoreEntitySet="TestAnswers">
+      <EndProperty Name="TestQuestions">
+        <ScalarProperty Name="ID" ColumnName="TestQuestionID" />
+      </EndProperty>
+      <EndProperty Name="TestAnswers">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <Condition ColumnName="TestQuestionID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TopFeatureCultureDetails_TopFeatures" TypeName="IOTAModel.FK_TopFeatureCultureDetails_TopFeatures" StoreEntitySet="TopFeatureCultureDetails">
+      <EndProperty Name="TopFeatures">
+        <ScalarProperty Name="ID" ColumnName="TopFeatureID" />
+      </EndProperty>
+      <EndProperty Name="TopFeatureCultureDetails">
+        <ScalarProperty Name="TopFeatureID" ColumnName="TopFeatureID" />
+        <ScalarProperty Name="CultureID" ColumnName="CultureID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TopFeatureResults_TopFeatures" TypeName="IOTAModel.FK_TopFeatureResults_TopFeatures" StoreEntitySet="TopFeatureResults">
+      <EndProperty Name="TopFeatures">
+        <ScalarProperty Name="ID" ColumnName="TopFeatureID" />
+      </EndProperty>
+      <EndProperty Name="TopFeatureResults">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BrandsToCwiText" TypeName="IOTAModel.BrandsToCwiText" StoreEntitySet="BrandsToCwiText">
+      <EndProperty Name="Brands">
+        <ScalarProperty Name="ID" ColumnName="BrandID" />
+      </EndProperty>
+      <EndProperty Name="CWIText">
+        <ScalarProperty Name="ID" ColumnName="CwiTextID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CustomerBrandsToDevices" TypeName="IOTAModel.CustomerBrandsToDevices" StoreEntitySet="CustomerBrandsToDevices">
+      <EndProperty Name="Brands">
+        <ScalarProperty Name="ID" ColumnName="CustomerBrandID" />
+      </EndProperty>
+      <EndProperty Name="Devices">
+        <ScalarProperty Name="ID" ColumnName="DeviceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CustomerBrandsToRegions" TypeName="IOTAModel.CustomerBrandsToRegions" StoreEntitySet="CustomerBrandsToRegions">
+      <EndProperty Name="Brands">
+        <ScalarProperty Name="ID" ColumnName="CustomerBrandID" />
+      </EndProperty>
+      <EndProperty Name="Regions">
+        <ScalarProperty Name="ID" ColumnName="RegionID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="CustomersToBrands" TypeName="IOTAModel.CustomersToBrands" StoreEntitySet="CustomersToBrands">
+      <EndProperty Name="Brands">
+        <ScalarProperty Name="ID" ColumnName="BrandID" />
+      </EndProperty>
+      <EndProperty Name="Customers">
+        <ScalarProperty Name="ID" ColumnName="CustomerID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DevicesToQuickGuides" TypeName="IOTAModel.DevicesToQuickGuides" StoreEntitySet="DevicesToQuickGuides">
+      <EndProperty Name="Devices">
+        <ScalarProperty Name="ID" ColumnName="DeviceID" />
+      </EndProperty>
+      <EndProperty Name="QuickGuides">
+        <ScalarProperty Name="ID" ColumnName="GuickGuideID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TestAnswersToComments" TypeName="IOTAModel.TestAnswersToComments" StoreEntitySet="TestAnswersToComments">
+      <EndProperty Name="Comments">
+        <ScalarProperty Name="ID" ColumnName="CommentID" />
+      </EndProperty>
+      <EndProperty Name="TestAnswers">
+        <ScalarProperty Name="ID" ColumnName="TestAnswerID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="TestQuestionsToTopFeatures" TypeName="IOTAModel.TestQuestionsToTopFeatures" StoreEntitySet="TestQuestionsToTopFeatures">
+      <EndProperty Name="TestQuestions">
+        <ScalarProperty Name="ID" ColumnName="TestQuestionID" />
+      </EndProperty>
+      <EndProperty Name="TopFeatures">
+        <ScalarProperty Name="ID" ColumnName="TopFeatureID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UsersToCustomerBrands" TypeName="IOTAModel.UsersToCustomerBrands" StoreEntitySet="UsersToCustomerBrands">
+      <EndProperty Name="Brands">
+        <ScalarProperty Name="ID" ColumnName="CustomerBrandID" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="ID" ColumnName="UserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UsersToRegions" TypeName="IOTAModel.UsersToRegions" StoreEntitySet="UsersToRegions">
+      <EndProperty Name="Regions">
+        <ScalarProperty Name="ID" ColumnName="RegionID" />
+      </EndProperty>
+      <EndProperty Name="Users">
+        <ScalarProperty Name="ID" ColumnName="UserID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="TestScripts">
+      <EntityTypeMapping TypeName="IOTAModel.TestScript">
+        <MappingFragment StoreEntitySet="TestScripts">
+          <ScalarProperty Name="TestPeriod" ColumnName="TestPeriod" />
+          <ScalarProperty Name="Quarter" ColumnName="Quarter" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_TestScripts_Devices" TypeName="IOTAModel.FK_TestScripts_Devices" StoreEntitySet="TestScripts">
+      <EndProperty Name="TestScript">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="Device">
+        <ScalarProperty Name="ID" ColumnName="DeviceID" />
+      </EndProperty>
+      <Condition ColumnName="DeviceID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestScripts_Regions" TypeName="IOTAModel.FK_TestScripts_Regions" StoreEntitySet="TestScripts">
+      <EndProperty Name="TestScript">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="Region">
+        <ScalarProperty Name="ID" ColumnName="RegionID" />
+      </EndProperty>
+      <Condition ColumnName="RegionID" IsNull="false" />
+    </AssociationSetMapping>
+    <EntitySetMapping Name="TestInstances">
+      <EntityTypeMapping TypeName="IOTAModel.TestInstance">
+        <MappingFragment StoreEntitySet="TestInstances">
+          <ScalarProperty Name="TestStatusID" ColumnName="TestStatusID" />
+          <ScalarProperty Name="DeviceSoftwareVersion" ColumnName="DeviceSoftwareVersion" />
+          <ScalarProperty Name="TotalTime" ColumnName="TotalTime" />
+          <ScalarProperty Name="TimeElapsed" ColumnName="TimeElapsed" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_Devices" TypeName="IOTAModel.FK_TestInstances_Devices" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="Device">
+        <ScalarProperty Name="ID" ColumnName="DeviceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_DevicesAuxilliary" TypeName="IOTAModel.FK_TestInstances_DevicesAuxilliary" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="Device">
+        <ScalarProperty Name="ID" ColumnName="AuxilliaryDeviceID" />
+      </EndProperty>
+      <Condition ColumnName="AuxilliaryDeviceID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestAnswers_TestInstances" TypeName="IOTAModel.FK_TestAnswers_TestInstances" StoreEntitySet="TestAnswers">
+      <EndProperty Name="TestAnswer">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="TestInstanceID" />
+      </EndProperty>
+      <Condition ColumnName="TestInstanceID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_TestInstanceConclusions" TypeName="IOTAModel.FK_TestInstances_TestInstanceConclusions" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="TestInstanceConclusion">
+        <ScalarProperty Name="ID" ColumnName="TestInstanceConclusionID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_TestQuestions" TypeName="IOTAModel.FK_TestInstances_TestQuestions" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="TestQuestion">
+        <ScalarProperty Name="ID" ColumnName="TestQuestionID" />
+      </EndProperty>
+      <Condition ColumnName="TestQuestionID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_TestScripts" TypeName="IOTAModel.FK_TestInstances_TestScripts" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="TestScript">
+        <ScalarProperty Name="ID" ColumnName="TestScriptID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_Users" TypeName="IOTAModel.FK_TestInstances_Users" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="ID" ColumnName="UserID" />
+      </EndProperty>
+      <Condition ColumnName="UserID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_UsersApprover" TypeName="IOTAModel.FK_TestInstances_UsersApprover" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="ID" ColumnName="ApproverID" />
+      </EndProperty>
+      <Condition ColumnName="ApproverID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TestInstances_UsersReviewer" TypeName="IOTAModel.FK_TestInstances_UsersReviewer" StoreEntitySet="TestInstances">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="ID" ColumnName="ReviewerID" />
+      </EndProperty>
+      <Condition ColumnName="ReviewerID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_TopFeatureResults_TestInstances" TypeName="IOTAModel.FK_TopFeatureResults_TestInstances" StoreEntitySet="TopFeatureResults">
+      <EndProperty Name="TopFeatureResult">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="TestInstanceID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FinalComments" TypeName="IOTAModel.FinalComments" StoreEntitySet="FinalComments">
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="TestInstanceID" />
+      </EndProperty>
+      <EndProperty Name="Comment">
+        <ScalarProperty Name="ID" ColumnName="CommentID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <EntitySetMapping Name="CWILogs">
+      <EntityTypeMapping TypeName="IOTAModel.CWILog">
+        <MappingFragment StoreEntitySet="CWILog">
+          <ScalarProperty Name="DateTime" ColumnName="DateTime" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CWIPages">
+      <EntityTypeMapping TypeName="IOTAModel.CWIPage">
+        <MappingFragment StoreEntitySet="CWIPages">
+          <ScalarProperty Name="CWIPage1" ColumnName="CWIPage" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_CWILog_Cultures" TypeName="IOTAModel.FK_CWILog_Cultures" StoreEntitySet="CWILog">
+      <EndProperty Name="CWILog">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="Culture">
+        <ScalarProperty Name="ID" ColumnName="CutureID" />
+      </EndProperty>
+      <Condition ColumnName="CutureID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CWILog_CWIPages" TypeName="IOTAModel.FK_CWILog_CWIPages" StoreEntitySet="CWILog">
+      <EndProperty Name="CWILog">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="CWIPage">
+        <ScalarProperty Name="ID" ColumnName="PageID" />
+      </EndProperty>
+      <Condition ColumnName="PageID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CWILog_TestInstances" TypeName="IOTAModel.FK_CWILog_TestInstances" StoreEntitySet="CWILog">
+      <EndProperty Name="CWILog">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="TestInstance">
+        <ScalarProperty Name="ID" ColumnName="TestInstanceID" />
+      </EndProperty>
+      <Condition ColumnName="TestInstanceID" IsNull="false" />
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="FK_CWILog_Vehicles" TypeName="IOTAModel.FK_CWILog_Vehicles" StoreEntitySet="CWILog">
+      <EndProperty Name="CWILog">
+        <ScalarProperty Name="ID" ColumnName="ID" />
+      </EndProperty>
+      <EndProperty Name="Vehicle">
+        <ScalarProperty Name="ID" ColumnName="VehicleID" />
+      </EndProperty>
+      <Condition ColumnName="VehicleID" IsNull="false" />
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

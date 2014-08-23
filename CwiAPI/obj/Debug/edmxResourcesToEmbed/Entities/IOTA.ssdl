@@ -1,0 +1,1481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl" Alias="Self" Namespace="IOTAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008">
+  <EntityContainer Name="IOTAModelStoreContainer">
+    <EntitySet Name="AdditionalAttributeValues" EntityType="IOTAModel.Store.AdditionalAttributeValues" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Brands" EntityType="IOTAModel.Store.Brands" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BrandsToCwiText" EntityType="IOTAModel.Store.BrandsToCwiText" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CommentCultureDetails" EntityType="IOTAModel.Store.CommentCultureDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Comments" EntityType="IOTAModel.Store.Comments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contacts" EntityType="IOTAModel.Store.Contacts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Countries" EntityType="IOTAModel.Store.Countries" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cultures" EntityType="IOTAModel.Store.Cultures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerBrandsToDevices" EntityType="IOTAModel.Store.CustomerBrandsToDevices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomerBrandsToRegions" EntityType="IOTAModel.Store.CustomerBrandsToRegions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Customers" EntityType="IOTAModel.Store.Customers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomersToAddresses" EntityType="IOTAModel.Store.CustomersToAddresses" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CustomersToBrands" EntityType="IOTAModel.Store.CustomersToBrands" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWILog" EntityType="IOTAModel.Store.CWILog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWIPages" EntityType="IOTAModel.Store.CWIPages" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWIRanges" EntityType="IOTAModel.Store.CWIRanges" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWIText" EntityType="IOTAModel.Store.CWIText" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CWITextCultureDetails" EntityType="IOTAModel.Store.CWITextCultureDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Devices" EntityType="IOTAModel.Store.Devices" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DevicesToQuickGuides" EntityType="IOTAModel.Store.DevicesToQuickGuides" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeatureCultureDetails" EntityType="IOTAModel.Store.FeatureCultureDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Features" EntityType="IOTAModel.Store.Features" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FeatureTypes" EntityType="IOTAModel.Store.FeatureTypes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="FinalComments" EntityType="IOTAModel.Store.FinalComments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuickGuides" EntityType="IOTAModel.Store.QuickGuides" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuickGuideSections" EntityType="IOTAModel.Store.QuickGuideSections" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuickGuideSteps" EntityType="IOTAModel.Store.QuickGuideSteps" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuickGuideText" EntityType="IOTAModel.Store.QuickGuideText" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="QuickGuideTextCultureDetails" EntityType="IOTAModel.Store.QuickGuideTextCultureDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Regions" EntityType="IOTAModel.Store.Regions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sections" EntityType="IOTAModel.Store.Sections" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestAnswers" EntityType="IOTAModel.Store.TestAnswers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestAnswersToComments" EntityType="IOTAModel.Store.TestAnswersToComments" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestInstanceConclusions" EntityType="IOTAModel.Store.TestInstanceConclusions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestInstances" EntityType="IOTAModel.Store.TestInstances" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestQuestions" EntityType="IOTAModel.Store.TestQuestions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestQuestionsToTopFeatures" EntityType="IOTAModel.Store.TestQuestionsToTopFeatures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TestScripts" EntityType="IOTAModel.Store.TestScripts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TopFeatureCultureDetails" EntityType="IOTAModel.Store.TopFeatureCultureDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TopFeatureResults" EntityType="IOTAModel.Store.TopFeatureResults" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TopFeatures" EntityType="IOTAModel.Store.TopFeatures" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="IOTAModel.Store.Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsersToCustomerBrands" EntityType="IOTAModel.Store.UsersToCustomerBrands" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UsersToRegions" EntityType="IOTAModel.Store.UsersToRegions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Vehicles" EntityType="IOTAModel.Store.Vehicles" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_BrandsToCwiText_Brands" Association="IOTAModel.Store.FK_BrandsToCwiText_Brands">
+      <End EntitySet="Brands" Role="Brands" />
+      <End EntitySet="BrandsToCwiText" Role="BrandsToCwiText" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BrandsToCwiText_CWIText" Association="IOTAModel.Store.FK_BrandsToCwiText_CWIText">
+      <End EntitySet="CWIText" Role="CWIText" />
+      <End EntitySet="BrandsToCwiText" Role="BrandsToCwiText" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentCultureDetails_Comments" Association="IOTAModel.Store.FK_CommentCultureDetails_Comments">
+      <End EntitySet="Comments" Role="Comments" />
+      <End EntitySet="CommentCultureDetails" Role="CommentCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CommentCultureDetails_Cultures" Association="IOTAModel.Store.FK_CommentCultureDetails_Cultures">
+      <End EntitySet="Cultures" Role="Cultures" />
+      <End EntitySet="CommentCultureDetails" Role="CommentCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Comments_Sections" Association="IOTAModel.Store.FK_Comments_Sections">
+      <End EntitySet="Sections" Role="Sections" />
+      <End EntitySet="Comments" Role="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerBrandsToDevices_Brands" Association="IOTAModel.Store.FK_CustomerBrandsToDevices_Brands">
+      <End EntitySet="Brands" Role="Brands" />
+      <End EntitySet="CustomerBrandsToDevices" Role="CustomerBrandsToDevices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerBrandsToRegions_Brands" Association="IOTAModel.Store.FK_CustomerBrandsToRegions_Brands">
+      <End EntitySet="Brands" Role="Brands" />
+      <End EntitySet="CustomerBrandsToRegions" Role="CustomerBrandsToRegions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomersToAddresses_Customers" Association="IOTAModel.Store.FK_CustomersToAddresses_Customers">
+      <End EntitySet="Customers" Role="Customers" />
+      <End EntitySet="CustomersToAddresses" Role="CustomersToAddresses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomersToDevices_Devices" Association="IOTAModel.Store.FK_CustomersToDevices_Devices">
+      <End EntitySet="Devices" Role="Devices" />
+      <End EntitySet="CustomerBrandsToDevices" Role="CustomerBrandsToDevices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomersToRegions_Regions" Association="IOTAModel.Store.FK_CustomersToRegions_Regions">
+      <End EntitySet="Regions" Role="Regions" />
+      <End EntitySet="CustomerBrandsToRegions" Role="CustomerBrandsToRegions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerToBrand_Brands" Association="IOTAModel.Store.FK_CustomerToBrand_Brands">
+      <End EntitySet="Brands" Role="Brands" />
+      <End EntitySet="CustomersToBrands" Role="CustomersToBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CustomerToBrand_Customers" Association="IOTAModel.Store.FK_CustomerToBrand_Customers">
+      <End EntitySet="Customers" Role="Customers" />
+      <End EntitySet="CustomersToBrands" Role="CustomersToBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CWILog_Cultures" Association="IOTAModel.Store.FK_CWILog_Cultures">
+      <End EntitySet="Cultures" Role="Cultures" />
+      <End EntitySet="CWILog" Role="CWILog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CWILog_CWIPages" Association="IOTAModel.Store.FK_CWILog_CWIPages">
+      <End EntitySet="CWIPages" Role="CWIPages" />
+      <End EntitySet="CWILog" Role="CWILog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CWILog_TestInstances" Association="IOTAModel.Store.FK_CWILog_TestInstances">
+      <End EntitySet="TestInstances" Role="TestInstances" />
+      <End EntitySet="CWILog" Role="CWILog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CWILog_Vehicles" Association="IOTAModel.Store.FK_CWILog_Vehicles">
+      <End EntitySet="Vehicles" Role="Vehicles" />
+      <End EntitySet="CWILog" Role="CWILog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CWITextCultureDetails_Cultures" Association="IOTAModel.Store.FK_CWITextCultureDetails_Cultures">
+      <End EntitySet="Cultures" Role="Cultures" />
+      <End EntitySet="CWITextCultureDetails" Role="CWITextCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CWITextCultureDetails_CWIText" Association="IOTAModel.Store.FK_CWITextCultureDetails_CWIText">
+      <End EntitySet="CWIText" Role="CWIText" />
+      <End EntitySet="CWITextCultureDetails" Role="CWITextCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Devices_Brands" Association="IOTAModel.Store.FK_Devices_Brands">
+      <End EntitySet="Brands" Role="Brands" />
+      <End EntitySet="Devices" Role="Devices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Devices_Countries" Association="IOTAModel.Store.FK_Devices_Countries">
+      <End EntitySet="Countries" Role="Countries" />
+      <End EntitySet="Devices" Role="Devices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DevicesToAdditionalAttributes_Devices" Association="IOTAModel.Store.FK_DevicesToAdditionalAttributes_Devices">
+      <End EntitySet="Devices" Role="Devices" />
+      <End EntitySet="AdditionalAttributeValues" Role="AdditionalAttributeValues" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DevicesToQuickGuides_Devices" Association="IOTAModel.Store.FK_DevicesToQuickGuides_Devices">
+      <End EntitySet="Devices" Role="Devices" />
+      <End EntitySet="DevicesToQuickGuides" Role="DevicesToQuickGuides" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DevicesToQuickGuides_QuickGuides" Association="IOTAModel.Store.FK_DevicesToQuickGuides_QuickGuides">
+      <End EntitySet="QuickGuides" Role="QuickGuides" />
+      <End EntitySet="DevicesToQuickGuides" Role="DevicesToQuickGuides" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FeatureCultureDetails_Cultures" Association="IOTAModel.Store.FK_FeatureCultureDetails_Cultures">
+      <End EntitySet="Cultures" Role="Cultures" />
+      <End EntitySet="FeatureCultureDetails" Role="FeatureCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FeatureCultureDetails_Features" Association="IOTAModel.Store.FK_FeatureCultureDetails_Features">
+      <End EntitySet="Features" Role="Features" />
+      <End EntitySet="FeatureCultureDetails" Role="FeatureCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Features_FeatureTypes" Association="IOTAModel.Store.FK_Features_FeatureTypes">
+      <End EntitySet="FeatureTypes" Role="FeatureTypes" />
+      <End EntitySet="Features" Role="Features" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Features_Sections" Association="IOTAModel.Store.FK_Features_Sections">
+      <End EntitySet="Sections" Role="Sections" />
+      <End EntitySet="Features" Role="Features" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FinalComments_Comments" Association="IOTAModel.Store.FK_FinalComments_Comments">
+      <End EntitySet="Comments" Role="Comments" />
+      <End EntitySet="FinalComments" Role="FinalComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FinalComments_TestInstances" Association="IOTAModel.Store.FK_FinalComments_TestInstances">
+      <End EntitySet="TestInstances" Role="TestInstances" />
+      <End EntitySet="FinalComments" Role="FinalComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuickGuideSteps_QuickGuides" Association="IOTAModel.Store.FK_QuickGuideSteps_QuickGuides">
+      <End EntitySet="QuickGuides" Role="QuickGuides" />
+      <End EntitySet="QuickGuideSteps" Role="QuickGuideSteps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuickGuideSteps_QuickGuideSections" Association="IOTAModel.Store.FK_QuickGuideSteps_QuickGuideSections">
+      <End EntitySet="QuickGuideSections" Role="QuickGuideSections" />
+      <End EntitySet="QuickGuideSteps" Role="QuickGuideSteps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuickGuideSteps_QuickGuideText" Association="IOTAModel.Store.FK_QuickGuideSteps_QuickGuideText">
+      <End EntitySet="QuickGuideText" Role="QuickGuideText" />
+      <End EntitySet="QuickGuideSteps" Role="QuickGuideSteps" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuickGuideTextCultureDetails_Cultures" Association="IOTAModel.Store.FK_QuickGuideTextCultureDetails_Cultures">
+      <End EntitySet="Cultures" Role="Cultures" />
+      <End EntitySet="QuickGuideTextCultureDetails" Role="QuickGuideTextCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QuickGuideTextCultureDetails_QuickGuideText" Association="IOTAModel.Store.FK_QuickGuideTextCultureDetails_QuickGuideText">
+      <End EntitySet="QuickGuideText" Role="QuickGuideText" />
+      <End EntitySet="QuickGuideTextCultureDetails" Role="QuickGuideTextCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestAnswers_TestInstances" Association="IOTAModel.Store.FK_TestAnswers_TestInstances">
+      <End EntitySet="TestInstances" Role="TestInstances" />
+      <End EntitySet="TestAnswers" Role="TestAnswers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestAnswers_TestQuestions" Association="IOTAModel.Store.FK_TestAnswers_TestQuestions">
+      <End EntitySet="TestQuestions" Role="TestQuestions" />
+      <End EntitySet="TestAnswers" Role="TestAnswers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestAnswersToComments_Comments" Association="IOTAModel.Store.FK_TestAnswersToComments_Comments">
+      <End EntitySet="Comments" Role="Comments" />
+      <End EntitySet="TestAnswersToComments" Role="TestAnswersToComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestAnswersToComments_TestAnswers" Association="IOTAModel.Store.FK_TestAnswersToComments_TestAnswers">
+      <End EntitySet="TestAnswers" Role="TestAnswers" />
+      <End EntitySet="TestAnswersToComments" Role="TestAnswersToComments" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_Devices" Association="IOTAModel.Store.FK_TestInstances_Devices">
+      <End EntitySet="Devices" Role="Devices" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_DevicesAuxilliary" Association="IOTAModel.Store.FK_TestInstances_DevicesAuxilliary">
+      <End EntitySet="Devices" Role="Devices" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_TestInstanceConclusions" Association="IOTAModel.Store.FK_TestInstances_TestInstanceConclusions">
+      <End EntitySet="TestInstanceConclusions" Role="TestInstanceConclusions" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_TestQuestions" Association="IOTAModel.Store.FK_TestInstances_TestQuestions">
+      <End EntitySet="TestQuestions" Role="TestQuestions" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_TestScripts" Association="IOTAModel.Store.FK_TestInstances_TestScripts">
+      <End EntitySet="TestScripts" Role="TestScripts" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_Users" Association="IOTAModel.Store.FK_TestInstances_Users">
+      <End EntitySet="Users" Role="Users" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_UsersApprover" Association="IOTAModel.Store.FK_TestInstances_UsersApprover">
+      <End EntitySet="Users" Role="Users" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestInstances_UsersReviewer" Association="IOTAModel.Store.FK_TestInstances_UsersReviewer">
+      <End EntitySet="Users" Role="Users" />
+      <End EntitySet="TestInstances" Role="TestInstances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestQuestions_Features" Association="IOTAModel.Store.FK_TestQuestions_Features">
+      <End EntitySet="Features" Role="Features" />
+      <End EntitySet="TestQuestions" Role="TestQuestions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestQuestionsToTopFeatures_TestQuestions" Association="IOTAModel.Store.FK_TestQuestionsToTopFeatures_TestQuestions">
+      <End EntitySet="TestQuestions" Role="TestQuestions" />
+      <End EntitySet="TestQuestionsToTopFeatures" Role="TestQuestionsToTopFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestQuestionsToTopFeatures_TopFeatures" Association="IOTAModel.Store.FK_TestQuestionsToTopFeatures_TopFeatures">
+      <End EntitySet="TopFeatures" Role="TopFeatures" />
+      <End EntitySet="TestQuestionsToTopFeatures" Role="TestQuestionsToTopFeatures" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestScripts_Devices" Association="IOTAModel.Store.FK_TestScripts_Devices">
+      <End EntitySet="Devices" Role="Devices" />
+      <End EntitySet="TestScripts" Role="TestScripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TestScripts_Regions" Association="IOTAModel.Store.FK_TestScripts_Regions">
+      <End EntitySet="Regions" Role="Regions" />
+      <End EntitySet="TestScripts" Role="TestScripts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopFeatureCultureDetails_Cultures" Association="IOTAModel.Store.FK_TopFeatureCultureDetails_Cultures">
+      <End EntitySet="Cultures" Role="Cultures" />
+      <End EntitySet="TopFeatureCultureDetails" Role="TopFeatureCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopFeatureCultureDetails_TopFeatures" Association="IOTAModel.Store.FK_TopFeatureCultureDetails_TopFeatures">
+      <End EntitySet="TopFeatures" Role="TopFeatures" />
+      <End EntitySet="TopFeatureCultureDetails" Role="TopFeatureCultureDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopFeatureResults_TestInstances" Association="IOTAModel.Store.FK_TopFeatureResults_TestInstances">
+      <End EntitySet="TestInstances" Role="TestInstances" />
+      <End EntitySet="TopFeatureResults" Role="TopFeatureResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TopFeatureResults_TopFeatures" Association="IOTAModel.Store.FK_TopFeatureResults_TopFeatures">
+      <End EntitySet="TopFeatures" Role="TopFeatures" />
+      <End EntitySet="TopFeatureResults" Role="TopFeatureResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Users_Contacts" Association="IOTAModel.Store.FK_Users_Contacts">
+      <End EntitySet="Contacts" Role="Contacts" />
+      <End EntitySet="Users" Role="Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersToCustomerBrands_Brands" Association="IOTAModel.Store.FK_UsersToCustomerBrands_Brands">
+      <End EntitySet="Brands" Role="Brands" />
+      <End EntitySet="UsersToCustomerBrands" Role="UsersToCustomerBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UsersToRegions_Regions" Association="IOTAModel.Store.FK_UsersToRegions_Regions">
+      <End EntitySet="Regions" Role="Regions" />
+      <End EntitySet="UsersToRegions" Role="UsersToRegions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToCountry_Users" Association="IOTAModel.Store.FK_UserToCountry_Users">
+      <End EntitySet="Users" Role="Users" />
+      <End EntitySet="UsersToRegions" Role="UsersToRegions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserToCustomer_Users" Association="IOTAModel.Store.FK_UserToCustomer_Users">
+      <End EntitySet="Users" Role="Users" />
+      <End EntitySet="UsersToCustomerBrands" Role="UsersToCustomerBrands" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehicle_Brands" Association="IOTAModel.Store.FK_Vehicle_Brands">
+      <End EntitySet="Brands" Role="Brands" />
+      <End EntitySet="Vehicles" Role="Vehicles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VINs_Devices" Association="IOTAModel.Store.FK_VINs_Devices">
+      <End EntitySet="Devices" Role="Devices" />
+      <End EntitySet="CWIRanges" Role="CWIRanges" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VINs_Vehicle" Association="IOTAModel.Store.FK_VINs_Vehicle">
+      <End EntitySet="Vehicles" Role="Vehicles" />
+      <End EntitySet="CWIRanges" Role="CWIRanges" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="AdditionalAttributeValues">
+    <Key>
+      <PropertyRef Name="DeviceID" />
+      <PropertyRef Name="AdditionalAttributeID" />
+    </Key>
+    <Property Name="DeviceID" Nullable="false" Type="int" />
+    <Property Name="AdditionalAttributeID" Nullable="false" Type="int" />
+    <Property Name="AdditionalAttributeValue" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Brands">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Logo" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="BrandsToCwiText">
+    <Key>
+      <PropertyRef Name="BrandID" />
+      <PropertyRef Name="CwiTextID" />
+    </Key>
+    <Property Name="BrandID" Nullable="false" Type="int" />
+    <Property Name="CwiTextID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="CommentCultureDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="CommentID" Nullable="false" Type="int" />
+    <Property Name="CultureID" Nullable="false" Type="int" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="SectionID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Forename" MaxLength="50" Type="nvarchar" />
+    <Property Name="Surname" MaxLength="50" Type="nvarchar" />
+    <Property Name="Role" MaxLength="50" Type="nvarchar" />
+    <Property Name="Phone" MaxLength="50" Type="nvarchar" />
+    <Property Name="Email" MaxLength="50" Type="nvarchar" />
+    <Property Name="AddressID" Type="int" />
+  </EntityType>
+  <EntityType Name="Countries">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Logo" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Cultures">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="LanguageCode" Nullable="false" MaxLength="2" Type="char" />
+    <Property Name="Locale" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="IsSupported" Nullable="false" Type="bit" />
+  </EntityType>
+  <EntityType Name="CustomerBrandsToDevices">
+    <Key>
+      <PropertyRef Name="CustomerBrandID" />
+      <PropertyRef Name="DeviceID" />
+    </Key>
+    <Property Name="CustomerBrandID" Nullable="false" Type="int" />
+    <Property Name="DeviceID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="CustomerBrandsToRegions">
+    <Key>
+      <PropertyRef Name="CustomerBrandID" />
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Name="CustomerBrandID" Nullable="false" Type="int" />
+    <Property Name="RegionID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="50" Type="nvarchar" />
+    <Property Name="Website" MaxLength="50" Type="nvarchar" />
+    <Property Name="CompanyNumber" MaxLength="20" Type="nvarchar" />
+    <Property Name="VATNumber" MaxLength="10" Type="nvarchar" />
+    <Property Name="Comments" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="CustomersToAddresses">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="AddressID" />
+    </Key>
+    <Property Name="CustomerID" Nullable="false" Type="int" />
+    <Property Name="AddressID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="CustomersToBrands">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="BrandID" />
+    </Key>
+    <Property Name="CustomerID" Nullable="false" Type="int" />
+    <Property Name="BrandID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="CWILog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="VehicleID" Type="int" />
+    <Property Name="TestInstanceID" Type="int" />
+    <Property Name="PageID" Type="int" />
+    <Property Name="CutureID" Type="int" />
+    <Property Name="DateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CWIPages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="CWIPage" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="CWIRanges">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="RangeStart" MaxLength="50" Type="nvarchar" />
+    <Property Name="RangeEnd" MaxLength="50" Type="nvarchar" />
+    <Property Name="RegularExpression" MaxLength="500" Type="nvarchar" />
+    <Property Name="DeviceID" Type="int" />
+    <Property Name="VehicleID" Type="int" />
+    <Property Name="IsLatest" Nullable="false" Type="bit" />
+    <Property Name="RangeType" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="CWIText">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+  </EntityType>
+  <EntityType Name="CWITextCultureDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="CwiTextID" Nullable="false" Type="int" />
+    <Property Name="CultureID" Nullable="false" Type="int" />
+    <Property Name="CwiText" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Devices">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="SerialNumber" MaxLength="40" Type="nvarchar" />
+    <Property Name="BrandID" Nullable="false" Type="int" />
+    <Property Name="Model" MaxLength="50" Type="nvarchar" />
+    <Property Name="Software" MaxLength="200" Type="nvarchar" />
+    <Property Name="Hardware" MaxLength="50" Type="nvarchar" />
+    <Property Name="Provider" MaxLength="60" Type="nvarchar" />
+    <Property Name="StatusID" Nullable="false" Type="int" />
+    <Property Name="AcquiredOn" Type="smalldatetime" />
+    <Property Name="RetiredOn" Type="smalldatetime" />
+    <Property Name="CountryID" Nullable="false" Type="int" />
+    <Property Name="Comment" MaxLength="500" Type="nvarchar" />
+    <Property Name="LastChecked" Type="smalldatetime" />
+    <Property Name="Photo" MaxLength="255" Type="nvarchar" />
+    <Property Name="DeviceTypeID" Type="int" />
+    <Property Name="NextGenID" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="DevicesToQuickGuides">
+    <Key>
+      <PropertyRef Name="DeviceID" />
+      <PropertyRef Name="GuickGuideID" />
+    </Key>
+    <Property Name="DeviceID" Nullable="false" Type="int" />
+    <Property Name="GuickGuideID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="FeatureCultureDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="FeatureID" Nullable="false" Type="int" />
+    <Property Name="CultureID" Nullable="false" Type="int" />
+    <Property Name="Feature" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Features">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="500" Type="nvarchar" />
+    <Property Name="SectionID" Type="int" />
+    <Property Name="FeatureTypeID" Type="int" />
+    <Property Name="OrderNumber" Type="int" />
+  </EntityType>
+  <EntityType Name="FeatureTypes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="FeatureType" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="FinalComments">
+    <Key>
+      <PropertyRef Name="TestInstanceID" />
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="TestInstanceID" Nullable="false" Type="int" />
+    <Property Name="CommentID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="QuickGuides">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Discoverable" Nullable="false" Type="bit" />
+  </EntityType>
+  <EntityType Name="QuickGuideSections">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Section" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="SectionNumber" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="QuickGuideSteps">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="QuickGuideID" Type="int" />
+    <Property Name="QuickGuideSectionID" Nullable="false" Type="int" />
+    <Property Name="QuickGuideTextID" Nullable="false" Type="int" />
+    <Property Name="Step" Nullable="false" Type="int" />
+    <Property Name="Grouping" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="QuickGuideText">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+  </EntityType>
+  <EntityType Name="QuickGuideTextCultureDetails">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="QuickGuideTextID" Nullable="false" Type="int" />
+    <Property Name="CultureID" Nullable="false" Type="int" />
+    <Property Name="QuickGuideText" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Regions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Sections">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="SectionNumber" Nullable="false" Type="int" />
+    <Property Name="Section" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="TestAnswers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="TestQuestionID" Type="int" />
+    <Property Name="TestInstanceID" Type="int" />
+    <Property Name="Answer" Type="nvarchar(max)" />
+    <Property Name="TotalYes" Type="int" />
+    <Property Name="Passed" Type="int" />
+  </EntityType>
+  <EntityType Name="TestAnswersToComments">
+    <Key>
+      <PropertyRef Name="TestAnswerID" />
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="TestAnswerID" Nullable="false" Type="int" />
+    <Property Name="CommentID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="TestInstanceConclusions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Conclusion" Nullable="false" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="TestInstances">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="200" Type="nvarchar" />
+    <Property Name="TestScriptID" Nullable="false" Type="int" />
+    <Property Name="DeviceID" Nullable="false" Type="int" />
+    <Property Name="AuxilliaryDeviceID" Type="int" />
+    <Property Name="TestStatusID" Nullable="false" Type="int" />
+    <Property Name="UserID" Type="int" />
+    <Property Name="ReviewerID" Type="int" />
+    <Property Name="ApproverID" Type="int" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="EndDate" Type="datetime" />
+    <Property Name="TimeElapsed" Type="int" />
+    <Property Name="TotalTime" Type="int" />
+    <Property Name="TestInstanceConclusionID" Nullable="false" Type="int" />
+    <Property Name="TestQuestionID" Type="int" />
+    <Property Name="DeviceSoftwareVersion" MaxLength="200" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="TestQuestions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="TestID" Type="int" />
+    <Property Name="FeatureID" Type="int" />
+    <Property Name="Question" Type="nvarchar(max)" />
+    <Property Name="ExpectedAnswer" Type="nvarchar(max)" />
+    <Property Name="NoOfRepeats" Type="int" />
+    <Property Name="PassRate" Type="int" />
+  </EntityType>
+  <EntityType Name="TestQuestionsToTopFeatures">
+    <Key>
+      <PropertyRef Name="TestQuestionID" />
+      <PropertyRef Name="TopFeatureID" />
+    </Key>
+    <Property Name="TestQuestionID" Nullable="false" Type="int" />
+    <Property Name="TopFeatureID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="TestScripts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="200" Type="nvarchar" />
+    <Property Name="Description" MaxLength="255" Type="nvarchar" />
+    <Property Name="DeviceID" Type="int" />
+    <Property Name="RegionID" Type="int" />
+    <Property Name="Year" Type="int" />
+    <Property Name="Quarter" Type="int" />
+    <Property Name="TestPeriod" Type="date" />
+  </EntityType>
+  <EntityType Name="TopFeatureCultureDetails">
+    <Key>
+      <PropertyRef Name="TopFeatureID" />
+      <PropertyRef Name="CultureID" />
+    </Key>
+    <Property Name="TopFeatureID" Nullable="false" Type="int" />
+    <Property Name="CultureID" Nullable="false" Type="int" />
+    <Property Name="TopFeature" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="TopFeatureResults">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="TestInstanceID" Nullable="false" Type="int" />
+    <Property Name="TopFeatureID" Nullable="false" Type="int" />
+    <Property Name="Result" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="TopFeatures">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Name" MaxLength="500" Type="nvarchar" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="Username" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Password" Nullable="false" MaxLength="50" Type="nvarchar" />
+    <Property Name="Comment" Type="nvarchar(max)" />
+    <Property Name="Active" Nullable="false" Type="bit" />
+    <Property Name="CountryID" Nullable="false" Type="int" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="CreateComments" Nullable="false" Type="bit" />
+    <Property Name="AllCustomers" Nullable="false" Type="bit" />
+    <Property Name="AllRegions" Nullable="false" Type="bit" />
+    <Property Name="ContactID" Type="int" />
+  </EntityType>
+  <EntityType Name="UsersToCustomerBrands">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="CustomerBrandID" />
+    </Key>
+    <Property Name="UserID" Nullable="false" Type="int" />
+    <Property Name="CustomerBrandID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="UsersToRegions">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="RegionID" />
+    </Key>
+    <Property Name="UserID" Nullable="false" Type="int" />
+    <Property Name="RegionID" Nullable="false" Type="int" />
+  </EntityType>
+  <EntityType Name="Vehicles">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Nullable="false" StoreGeneratedPattern="Identity" Type="int" />
+    <Property Name="BrandID" Nullable="false" Type="int" />
+    <Property Name="Model" MaxLength="50" Type="nvarchar" />
+  </EntityType>
+  <Association Name="FK_BrandsToCwiText_Brands">
+    <End Type="IOTAModel.Store.Brands" Multiplicity="1" Role="Brands" />
+    <End Type="IOTAModel.Store.BrandsToCwiText" Multiplicity="*" Role="BrandsToCwiText" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BrandsToCwiText">
+        <PropertyRef Name="BrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BrandsToCwiText_CWIText">
+    <End Type="IOTAModel.Store.CWIText" Multiplicity="1" Role="CWIText" />
+    <End Type="IOTAModel.Store.BrandsToCwiText" Multiplicity="*" Role="BrandsToCwiText" />
+    <ReferentialConstraint>
+      <Principal Role="CWIText">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BrandsToCwiText">
+        <PropertyRef Name="CwiTextID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentCultureDetails_Comments">
+    <End Type="IOTAModel.Store.Comments" Multiplicity="1" Role="Comments" />
+    <End Type="IOTAModel.Store.CommentCultureDetails" Multiplicity="*" Role="CommentCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="Comments">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CommentCultureDetails">
+        <PropertyRef Name="CommentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CommentCultureDetails_Cultures">
+    <End Type="IOTAModel.Store.Cultures" Multiplicity="1" Role="Cultures" />
+    <End Type="IOTAModel.Store.CommentCultureDetails" Multiplicity="*" Role="CommentCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="Cultures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CommentCultureDetails">
+        <PropertyRef Name="CultureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Comments_Sections">
+    <End Type="IOTAModel.Store.Sections" Multiplicity="1" Role="Sections" />
+    <End Type="IOTAModel.Store.Comments" Multiplicity="*" Role="Comments" />
+    <ReferentialConstraint>
+      <Principal Role="Sections">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="SectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerBrandsToDevices_Brands">
+    <End Type="IOTAModel.Store.Brands" Multiplicity="1" Role="Brands" />
+    <End Type="IOTAModel.Store.CustomerBrandsToDevices" Multiplicity="*" Role="CustomerBrandsToDevices" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomerBrandsToDevices">
+        <PropertyRef Name="CustomerBrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerBrandsToRegions_Brands">
+    <End Type="IOTAModel.Store.Brands" Multiplicity="1" Role="Brands" />
+    <End Type="IOTAModel.Store.CustomerBrandsToRegions" Multiplicity="*" Role="CustomerBrandsToRegions" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomerBrandsToRegions">
+        <PropertyRef Name="CustomerBrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomersToAddresses_Customers">
+    <End Type="IOTAModel.Store.Customers" Multiplicity="1" Role="Customers" />
+    <End Type="IOTAModel.Store.CustomersToAddresses" Multiplicity="*" Role="CustomersToAddresses" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomersToAddresses">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomersToDevices_Devices">
+    <End Type="IOTAModel.Store.Devices" Multiplicity="1" Role="Devices" />
+    <End Type="IOTAModel.Store.CustomerBrandsToDevices" Multiplicity="*" Role="CustomerBrandsToDevices" />
+    <ReferentialConstraint>
+      <Principal Role="Devices">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomerBrandsToDevices">
+        <PropertyRef Name="DeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomersToRegions_Regions">
+    <End Type="IOTAModel.Store.Regions" Multiplicity="1" Role="Regions" />
+    <End Type="IOTAModel.Store.CustomerBrandsToRegions" Multiplicity="*" Role="CustomerBrandsToRegions" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomerBrandsToRegions">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerToBrand_Brands">
+    <End Type="IOTAModel.Store.Brands" Multiplicity="1" Role="Brands" />
+    <End Type="IOTAModel.Store.CustomersToBrands" Multiplicity="*" Role="CustomersToBrands" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomersToBrands">
+        <PropertyRef Name="BrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CustomerToBrand_Customers">
+    <End Type="IOTAModel.Store.Customers" Multiplicity="1" Role="Customers" />
+    <End Type="IOTAModel.Store.CustomersToBrands" Multiplicity="*" Role="CustomersToBrands" />
+    <ReferentialConstraint>
+      <Principal Role="Customers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CustomersToBrands">
+        <PropertyRef Name="CustomerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CWILog_Cultures">
+    <End Type="IOTAModel.Store.Cultures" Multiplicity="0..1" Role="Cultures" />
+    <End Type="IOTAModel.Store.CWILog" Multiplicity="*" Role="CWILog" />
+    <ReferentialConstraint>
+      <Principal Role="Cultures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWILog">
+        <PropertyRef Name="CutureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CWILog_CWIPages">
+    <End Type="IOTAModel.Store.CWIPages" Multiplicity="0..1" Role="CWIPages" />
+    <End Type="IOTAModel.Store.CWILog" Multiplicity="*" Role="CWILog" />
+    <ReferentialConstraint>
+      <Principal Role="CWIPages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWILog">
+        <PropertyRef Name="PageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CWILog_TestInstances">
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="0..1" Role="TestInstances" />
+    <End Type="IOTAModel.Store.CWILog" Multiplicity="*" Role="CWILog" />
+    <ReferentialConstraint>
+      <Principal Role="TestInstances">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWILog">
+        <PropertyRef Name="TestInstanceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CWILog_Vehicles">
+    <End Type="IOTAModel.Store.Vehicles" Multiplicity="0..1" Role="Vehicles" />
+    <End Type="IOTAModel.Store.CWILog" Multiplicity="*" Role="CWILog" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWILog">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CWITextCultureDetails_Cultures">
+    <End Type="IOTAModel.Store.Cultures" Multiplicity="1" Role="Cultures" />
+    <End Type="IOTAModel.Store.CWITextCultureDetails" Multiplicity="*" Role="CWITextCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="Cultures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWITextCultureDetails">
+        <PropertyRef Name="CultureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CWITextCultureDetails_CWIText">
+    <End Type="IOTAModel.Store.CWIText" Multiplicity="1" Role="CWIText" />
+    <End Type="IOTAModel.Store.CWITextCultureDetails" Multiplicity="*" Role="CWITextCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="CWIText">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWITextCultureDetails">
+        <PropertyRef Name="CwiTextID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Devices_Brands">
+    <End Type="IOTAModel.Store.Brands" Multiplicity="1" Role="Brands" />
+    <End Type="IOTAModel.Store.Devices" Multiplicity="*" Role="Devices" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Devices">
+        <PropertyRef Name="BrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Devices_Countries">
+    <End Type="IOTAModel.Store.Countries" Multiplicity="1" Role="Countries" />
+    <End Type="IOTAModel.Store.Devices" Multiplicity="*" Role="Devices" />
+    <ReferentialConstraint>
+      <Principal Role="Countries">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Devices">
+        <PropertyRef Name="CountryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DevicesToAdditionalAttributes_Devices">
+    <End Type="IOTAModel.Store.Devices" Multiplicity="1" Role="Devices" />
+    <End Type="IOTAModel.Store.AdditionalAttributeValues" Multiplicity="*" Role="AdditionalAttributeValues" />
+    <ReferentialConstraint>
+      <Principal Role="Devices">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="AdditionalAttributeValues">
+        <PropertyRef Name="DeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DevicesToQuickGuides_Devices">
+    <End Type="IOTAModel.Store.Devices" Multiplicity="1" Role="Devices" />
+    <End Type="IOTAModel.Store.DevicesToQuickGuides" Multiplicity="*" Role="DevicesToQuickGuides" />
+    <ReferentialConstraint>
+      <Principal Role="Devices">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DevicesToQuickGuides">
+        <PropertyRef Name="DeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DevicesToQuickGuides_QuickGuides">
+    <End Type="IOTAModel.Store.QuickGuides" Multiplicity="1" Role="QuickGuides" />
+    <End Type="IOTAModel.Store.DevicesToQuickGuides" Multiplicity="*" Role="DevicesToQuickGuides" />
+    <ReferentialConstraint>
+      <Principal Role="QuickGuides">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="DevicesToQuickGuides">
+        <PropertyRef Name="GuickGuideID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FeatureCultureDetails_Cultures">
+    <End Type="IOTAModel.Store.Cultures" Multiplicity="1" Role="Cultures" />
+    <End Type="IOTAModel.Store.FeatureCultureDetails" Multiplicity="*" Role="FeatureCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="Cultures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FeatureCultureDetails">
+        <PropertyRef Name="CultureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FeatureCultureDetails_Features">
+    <End Type="IOTAModel.Store.Features" Multiplicity="1" Role="Features" />
+    <End Type="IOTAModel.Store.FeatureCultureDetails" Multiplicity="*" Role="FeatureCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="Features">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FeatureCultureDetails">
+        <PropertyRef Name="FeatureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Features_FeatureTypes">
+    <End Type="IOTAModel.Store.FeatureTypes" Multiplicity="0..1" Role="FeatureTypes" />
+    <End Type="IOTAModel.Store.Features" Multiplicity="*" Role="Features" />
+    <ReferentialConstraint>
+      <Principal Role="FeatureTypes">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Features">
+        <PropertyRef Name="FeatureTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Features_Sections">
+    <End Type="IOTAModel.Store.Sections" Multiplicity="0..1" Role="Sections" />
+    <End Type="IOTAModel.Store.Features" Multiplicity="*" Role="Features" />
+    <ReferentialConstraint>
+      <Principal Role="Sections">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Features">
+        <PropertyRef Name="SectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FinalComments_Comments">
+    <End Type="IOTAModel.Store.Comments" Multiplicity="1" Role="Comments" />
+    <End Type="IOTAModel.Store.FinalComments" Multiplicity="*" Role="FinalComments" />
+    <ReferentialConstraint>
+      <Principal Role="Comments">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FinalComments">
+        <PropertyRef Name="CommentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FinalComments_TestInstances">
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="1" Role="TestInstances" />
+    <End Type="IOTAModel.Store.FinalComments" Multiplicity="*" Role="FinalComments" />
+    <ReferentialConstraint>
+      <Principal Role="TestInstances">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="FinalComments">
+        <PropertyRef Name="TestInstanceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuickGuideSteps_QuickGuides">
+    <End Type="IOTAModel.Store.QuickGuides" Multiplicity="0..1" Role="QuickGuides" />
+    <End Type="IOTAModel.Store.QuickGuideSteps" Multiplicity="*" Role="QuickGuideSteps" />
+    <ReferentialConstraint>
+      <Principal Role="QuickGuides">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QuickGuideSteps">
+        <PropertyRef Name="QuickGuideID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuickGuideSteps_QuickGuideSections">
+    <End Type="IOTAModel.Store.QuickGuideSections" Multiplicity="1" Role="QuickGuideSections" />
+    <End Type="IOTAModel.Store.QuickGuideSteps" Multiplicity="*" Role="QuickGuideSteps" />
+    <ReferentialConstraint>
+      <Principal Role="QuickGuideSections">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QuickGuideSteps">
+        <PropertyRef Name="QuickGuideSectionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuickGuideSteps_QuickGuideText">
+    <End Type="IOTAModel.Store.QuickGuideText" Multiplicity="1" Role="QuickGuideText" />
+    <End Type="IOTAModel.Store.QuickGuideSteps" Multiplicity="*" Role="QuickGuideSteps" />
+    <ReferentialConstraint>
+      <Principal Role="QuickGuideText">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QuickGuideSteps">
+        <PropertyRef Name="QuickGuideTextID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuickGuideTextCultureDetails_Cultures">
+    <End Type="IOTAModel.Store.Cultures" Multiplicity="1" Role="Cultures" />
+    <End Type="IOTAModel.Store.QuickGuideTextCultureDetails" Multiplicity="*" Role="QuickGuideTextCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="Cultures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QuickGuideTextCultureDetails">
+        <PropertyRef Name="CultureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QuickGuideTextCultureDetails_QuickGuideText">
+    <End Type="IOTAModel.Store.QuickGuideText" Multiplicity="1" Role="QuickGuideText" />
+    <End Type="IOTAModel.Store.QuickGuideTextCultureDetails" Multiplicity="*" Role="QuickGuideTextCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="QuickGuideText">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="QuickGuideTextCultureDetails">
+        <PropertyRef Name="QuickGuideTextID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestAnswers_TestInstances">
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="0..1" Role="TestInstances" />
+    <End Type="IOTAModel.Store.TestAnswers" Multiplicity="*" Role="TestAnswers" />
+    <ReferentialConstraint>
+      <Principal Role="TestInstances">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestAnswers">
+        <PropertyRef Name="TestInstanceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestAnswers_TestQuestions">
+    <End Type="IOTAModel.Store.TestQuestions" Multiplicity="0..1" Role="TestQuestions" />
+    <End Type="IOTAModel.Store.TestAnswers" Multiplicity="*" Role="TestAnswers" />
+    <ReferentialConstraint>
+      <Principal Role="TestQuestions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestAnswers">
+        <PropertyRef Name="TestQuestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestAnswersToComments_Comments">
+    <End Type="IOTAModel.Store.Comments" Multiplicity="1" Role="Comments" />
+    <End Type="IOTAModel.Store.TestAnswersToComments" Multiplicity="*" Role="TestAnswersToComments" />
+    <ReferentialConstraint>
+      <Principal Role="Comments">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestAnswersToComments">
+        <PropertyRef Name="CommentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestAnswersToComments_TestAnswers">
+    <End Type="IOTAModel.Store.TestAnswers" Multiplicity="1" Role="TestAnswers" />
+    <End Type="IOTAModel.Store.TestAnswersToComments" Multiplicity="*" Role="TestAnswersToComments" />
+    <ReferentialConstraint>
+      <Principal Role="TestAnswers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestAnswersToComments">
+        <PropertyRef Name="TestAnswerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_Devices">
+    <End Type="IOTAModel.Store.Devices" Multiplicity="1" Role="Devices" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="Devices">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="DeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_DevicesAuxilliary">
+    <End Type="IOTAModel.Store.Devices" Multiplicity="0..1" Role="Devices" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="Devices">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="AuxilliaryDeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_TestInstanceConclusions">
+    <End Type="IOTAModel.Store.TestInstanceConclusions" Multiplicity="1" Role="TestInstanceConclusions" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="TestInstanceConclusions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="TestInstanceConclusionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_TestQuestions">
+    <End Type="IOTAModel.Store.TestQuestions" Multiplicity="0..1" Role="TestQuestions" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="TestQuestions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="TestQuestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_TestScripts">
+    <End Type="IOTAModel.Store.TestScripts" Multiplicity="1" Role="TestScripts" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="TestScripts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="TestScriptID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_Users">
+    <End Type="IOTAModel.Store.Users" Multiplicity="0..1" Role="Users" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_UsersApprover">
+    <End Type="IOTAModel.Store.Users" Multiplicity="0..1" Role="Users" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="ApproverID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestInstances_UsersReviewer">
+    <End Type="IOTAModel.Store.Users" Multiplicity="0..1" Role="Users" />
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="*" Role="TestInstances" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestInstances">
+        <PropertyRef Name="ReviewerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestQuestions_Features">
+    <End Type="IOTAModel.Store.Features" Multiplicity="0..1" Role="Features" />
+    <End Type="IOTAModel.Store.TestQuestions" Multiplicity="*" Role="TestQuestions" />
+    <ReferentialConstraint>
+      <Principal Role="Features">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestQuestions">
+        <PropertyRef Name="FeatureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestQuestionsToTopFeatures_TestQuestions">
+    <End Type="IOTAModel.Store.TestQuestions" Multiplicity="1" Role="TestQuestions" />
+    <End Type="IOTAModel.Store.TestQuestionsToTopFeatures" Multiplicity="*" Role="TestQuestionsToTopFeatures" />
+    <ReferentialConstraint>
+      <Principal Role="TestQuestions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestQuestionsToTopFeatures">
+        <PropertyRef Name="TestQuestionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestQuestionsToTopFeatures_TopFeatures">
+    <End Type="IOTAModel.Store.TopFeatures" Multiplicity="1" Role="TopFeatures" />
+    <End Type="IOTAModel.Store.TestQuestionsToTopFeatures" Multiplicity="*" Role="TestQuestionsToTopFeatures" />
+    <ReferentialConstraint>
+      <Principal Role="TopFeatures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestQuestionsToTopFeatures">
+        <PropertyRef Name="TopFeatureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestScripts_Devices">
+    <End Type="IOTAModel.Store.Devices" Multiplicity="0..1" Role="Devices" />
+    <End Type="IOTAModel.Store.TestScripts" Multiplicity="*" Role="TestScripts" />
+    <ReferentialConstraint>
+      <Principal Role="Devices">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestScripts">
+        <PropertyRef Name="DeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TestScripts_Regions">
+    <End Type="IOTAModel.Store.Regions" Multiplicity="0..1" Role="Regions" />
+    <End Type="IOTAModel.Store.TestScripts" Multiplicity="*" Role="TestScripts" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TestScripts">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopFeatureCultureDetails_Cultures">
+    <End Type="IOTAModel.Store.Cultures" Multiplicity="1" Role="Cultures" />
+    <End Type="IOTAModel.Store.TopFeatureCultureDetails" Multiplicity="*" Role="TopFeatureCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="Cultures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TopFeatureCultureDetails">
+        <PropertyRef Name="CultureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopFeatureCultureDetails_TopFeatures">
+    <End Type="IOTAModel.Store.TopFeatures" Multiplicity="1" Role="TopFeatures" />
+    <End Type="IOTAModel.Store.TopFeatureCultureDetails" Multiplicity="*" Role="TopFeatureCultureDetails" />
+    <ReferentialConstraint>
+      <Principal Role="TopFeatures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TopFeatureCultureDetails">
+        <PropertyRef Name="TopFeatureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopFeatureResults_TestInstances">
+    <End Type="IOTAModel.Store.TestInstances" Multiplicity="1" Role="TestInstances" />
+    <End Type="IOTAModel.Store.TopFeatureResults" Multiplicity="*" Role="TopFeatureResults" />
+    <ReferentialConstraint>
+      <Principal Role="TestInstances">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TopFeatureResults">
+        <PropertyRef Name="TestInstanceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TopFeatureResults_TopFeatures">
+    <End Type="IOTAModel.Store.TopFeatures" Multiplicity="1" Role="TopFeatures" />
+    <End Type="IOTAModel.Store.TopFeatureResults" Multiplicity="*" Role="TopFeatureResults" />
+    <ReferentialConstraint>
+      <Principal Role="TopFeatures">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="TopFeatureResults">
+        <PropertyRef Name="TopFeatureID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Users_Contacts">
+    <End Type="IOTAModel.Store.Contacts" Multiplicity="0..1" Role="Contacts" />
+    <End Type="IOTAModel.Store.Users" Multiplicity="*" Role="Users" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="ContactID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersToCustomerBrands_Brands">
+    <End Type="IOTAModel.Store.Brands" Multiplicity="1" Role="Brands" />
+    <End Type="IOTAModel.Store.UsersToCustomerBrands" Multiplicity="*" Role="UsersToCustomerBrands" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UsersToCustomerBrands">
+        <PropertyRef Name="CustomerBrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UsersToRegions_Regions">
+    <End Type="IOTAModel.Store.Regions" Multiplicity="1" Role="Regions" />
+    <End Type="IOTAModel.Store.UsersToRegions" Multiplicity="*" Role="UsersToRegions" />
+    <ReferentialConstraint>
+      <Principal Role="Regions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UsersToRegions">
+        <PropertyRef Name="RegionID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToCountry_Users">
+    <End Type="IOTAModel.Store.Users" Multiplicity="1" Role="Users" />
+    <End Type="IOTAModel.Store.UsersToRegions" Multiplicity="*" Role="UsersToRegions" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UsersToRegions">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserToCustomer_Users">
+    <End Type="IOTAModel.Store.Users" Multiplicity="1" Role="Users" />
+    <End Type="IOTAModel.Store.UsersToCustomerBrands" Multiplicity="*" Role="UsersToCustomerBrands" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="UsersToCustomerBrands">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehicle_Brands">
+    <End Type="IOTAModel.Store.Brands" Multiplicity="1" Role="Brands" />
+    <End Type="IOTAModel.Store.Vehicles" Multiplicity="*" Role="Vehicles" />
+    <ReferentialConstraint>
+      <Principal Role="Brands">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Vehicles">
+        <PropertyRef Name="BrandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VINs_Devices">
+    <End Type="IOTAModel.Store.Devices" Multiplicity="0..1" Role="Devices" />
+    <End Type="IOTAModel.Store.CWIRanges" Multiplicity="*" Role="CWIRanges" />
+    <ReferentialConstraint>
+      <Principal Role="Devices">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWIRanges">
+        <PropertyRef Name="DeviceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VINs_Vehicle">
+    <End Type="IOTAModel.Store.Vehicles" Multiplicity="0..1" Role="Vehicles" />
+    <End Type="IOTAModel.Store.CWIRanges" Multiplicity="*" Role="CWIRanges" />
+    <ReferentialConstraint>
+      <Principal Role="Vehicles">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="CWIRanges">
+        <PropertyRef Name="VehicleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
